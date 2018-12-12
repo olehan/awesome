@@ -1,4 +1,4 @@
-# Some implementation of algorithms
+# Some implementation of algorithms (and data structures)
 
 Here I store the implementation of the algorithms that I use in my projects or just save for the future.
 
