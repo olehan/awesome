@@ -1,6 +1,6 @@
 package quicksort
 
-func Quicksort(arr *[]int) {
+func QuickSort(arr *[]int) {
 	arrLength := len(*arr)
 
 	if arrLength <= 1 {
@@ -31,10 +31,10 @@ func Quicksort(arr *[]int) {
 
 	if 0 < leftMark {
 		leftHalf := (*arr)[:leftMark - 1]
-		Quicksort(&leftHalf)
+		QuickSort(&leftHalf)
 	}
 	if rightMark < arrLength {
 		rightHalf := (*arr)[rightMark + 1:]
-		Quicksort(&rightHalf)
+		QuickSort(&rightHalf)
 	}
 }

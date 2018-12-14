@@ -1,12 +1,12 @@
 package binarysearch
 
 import (
-	"github.com/olehan/algorithms/algorithms/quicksort/go/quicksort"
+	"github.com/olehan/awesome/algorithms/go/quicksort"
 )
 
 func BinarySearch(arr *[]int, elem int, sort bool) int {
 	if sort {
-		quicksort.Quicksort(arr)
+		quicksort.QuickSort(arr)
 		return binarySearch(arr, elem)
 	}
 	return binarySearchWithoutSort(arr, elem)
