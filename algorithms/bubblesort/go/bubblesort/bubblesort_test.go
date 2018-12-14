@@ -1,4 +1,4 @@
-package main
+package bubblesort
 
 import (
 	utils "github.com/olehan/algorithms/utils/go"
@@ -6,5 +6,5 @@ import (
 )
 
 func BenchmarkBubbleSort(b *testing.B)  {
-	BubbleSort(utils.GenRandIntArr(10000, 1, 100))
+	BubbleSort(utils.GenRandIntArr(b.N, 1, 100))
 }

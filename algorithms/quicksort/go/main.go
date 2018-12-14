@@ -1,11 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"github.com/olehan/algorithms/algorithms/quicksort/go/quicksort"
+	utils "github.com/olehan/algorithms/utils/go"
+	"log"
+)
 
 func main() {
-	elements := []int{544, 48, 7, 577, 1847, 145, 79, 1, 7}
-	// 544, 48, 7, 577, (1847), 145, 79, 1, 7
-	// 7, 1, (7), 145, 1847, 577, 79, (48), 544
-	Quicksort(&elements)
-	fmt.Println(elements)
+	data := utils.GenRandIntArr(100, 1, 100)
+	log.Println("Data:", *data)
+	quicksort.Quicksort(data)
+	log.Println("Sorted:", *data)
 }

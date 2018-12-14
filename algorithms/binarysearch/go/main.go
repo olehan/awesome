@@ -1,8 +1,17 @@
 package main
 
-import "fmt"
+import (
+	"github.com/olehan/algorithms/algorithms/binarysearch/go/binarysearch"
+	utils "github.com/olehan/algorithms/utils/go"
+	"log"
+)
 
 func main() {
-	elements := []int{544, 48, 7, 577, 1847, 145, 79, 1, 7}
-	fmt.Println(BinarySearch(&elements, 145))
+	searchValue := 13
+	data := utils.GenRandIntArr(100, 1, 100)
+
+	log.Println("Data:", data)
+	log.Println("Search Value:", searchValue)
+	log.Println("Search Result:", binarysearch.BinarySearch(data, searchValue, true))
+	log.Println("Search Result Without Sort:", binarysearch.BinarySearch(data, searchValue, false))
 }

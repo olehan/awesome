@@ -1,4 +1,4 @@
-package main
+package bubblesort
 
 func BubbleSort(arr *[]int) {
 	if len(*arr) <= 1 {
